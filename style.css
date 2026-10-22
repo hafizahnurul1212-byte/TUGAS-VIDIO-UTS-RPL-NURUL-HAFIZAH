@@ -1,30 +1,29 @@
 :root {
-    --bg-color: #f4f7f6;
-    --card-bg: #ffffff;
+    --bg-color: #0c110f;
+    --card-bg: #fcf7fa;
     --text-color: #333333;
-    --primary-color: #0056b3;
-    --border-color: #cccccc;
-    --progress-bg: #e0e0e0;
+    --primary-color: #8f0862;
+    --border-color: #13043d;
+    --progres-bg: #eeedf7e0;
 }
 
 body.dark-mode {
-    --bg-color: #1e1e2e;
-    --card-bg: #2d2d3f;
+    --bg-color: #31292e;
+    --card-bg: #292229;
     --text-color: #f1f1f1;
-    --primary-color: #4da6ff;
-    --border-color: #44445c;
-    --progress-bg: #44445c;
+    --primary-color: #2e2b58;
+    --border-color: #201e20;
+    --progres-bg: #2b282a;
 }
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
+    background-image: url("c:\Users\User\Downloads\leopard.jpg");
     color: var(--text-color);
     margin: 0;
     padding: 20px;
-    transition:
-        background-color 0.3s,
-        color 0.3s;
+    transition: background-color 0.3s, color 0.3s
 }
 
 .container {
@@ -83,8 +82,8 @@ nav a {
     color: #fff;
     border: none;
 }
-
-/* Layout Utama (2 Kolom sesuai sketsa) */
+ 
+/* Layout Utama (2 kolom sesual sketsa) */
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -94,7 +93,7 @@ nav a {
 .card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 1px;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -117,15 +116,15 @@ nav a {
 }
 
 .progress-bar {
-    background-color: var(--progress-bg);
+    background-color: var(--progres-bg);
     border-radius: 10px;
     height: 12px;
     overflow: hidden;
 }
 
 .progress-fill {
-    background-color: var(--primary-color);
-    height: 100%;
+    background-color: rgb(172, 56, 152);
+    height: 100%;;
 }
 
 /* Form Styling */
@@ -151,7 +150,7 @@ nav a {
 
 .btn-submit {
     background-color: var(--primary-color);
-    color: white;
+    color: rgb(214, 42, 42);
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -160,7 +159,7 @@ nav a {
 }
 
 .alert-success {
-    background-color: #d4edda;
+    background-color: #4da6ff;
     color: #155724;
     padding: 10px;
     border-radius: 5px;
